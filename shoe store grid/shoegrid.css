@@ -1,0 +1,139 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  line-height: 1.8;
+}
+
+ul {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.parent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  display: inline-flex;
+}
+
+.child {
+  display: flex;
+  flex-flow: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-1 {
+  position: relative;
+}
+
+.child-1::after {
+  content: "Sale";
+  background-color: rgb(218, 23, 23);
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 3px;
+  position: absolute;
+  top: -3%;
+  left: -3%;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #f7f4f4c7;
+}
+
+.button {
+  color: #e7e7e7;
+  background-color: black;
+  text-transform: uppercase;
+  width: 1250px;
+  cursor: pointer;
+  font-size: medium;
+  padding: 10px;
+  margin: -9px;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  background-color: black;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.color:hover {
+  opacity: 0.5;
+}
+
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: rgb(223, 84, 84);
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: rgb(83, 64, 1);
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+a:link {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.price-shipping {
+  display: flex;
+  flex: 1;
+}
+
+.child-21 {
+  flex: 1;
+}
+
+.shipping {
+  text-align: center;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.price {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
